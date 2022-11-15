@@ -1,4 +1,4 @@
-# web
+# WUTX Beroepsproduct
 
 Vereisten en criteria
 Voor een voldoende moet je aan de volgende vereisten voldoen:
