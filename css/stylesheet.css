@@ -1,37 +1,9 @@
-body {
-    background-color: antiquewhite;
-    font-family:  'Courier New', Courier, monospace;
-}
+/* Color theme:
+    Dark color
+        #002233;
+    Light color
+        #0066FF;
+    Accent color
+        #?;
+*/ 
 
-ul {
-    margin: 2.5%;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-li {
-    padding: 0;
-    
-}
-
-li a:hover {
-    color: darkolivegreen; 
-
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-img {
-    border-radius: 5%;
-    width: 50%;
-    height: 50%;
-}
