@@ -1,132 +1,98 @@
-/* Color theme:
-    Dark color
-        #002233;
-    Light color
-        #0066FF;
-    Accent color
-        #8ecae6;
-*/ 
 
-/* !Body */ 
-body {
-    background-color: #002233;
-    font-family: Sans-serif;
-    color: #0066FF;
-    margin: 0; 
-    padding: 0; 
-}
 
-.spacer {
-    aspect-ratio: 1920/1080;
-    width: 100%;
+html, body {
+    background-color: #B9CEDD;
+    background-image: url(../images/Background.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.layer1 {
-    background-image: url("/images/layered-waves-haikei.svg");
-}
-
-.layer2 {
-    background-image: url("/images/layered-waves-haikei-reverse.svg");
-}
-
-/* !Header */
-header {
+nav { 
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    
-}
-
-header img {
-    width: 50px;
-    height: 50px;
-}
-
-header h1 {
-    margin: 0; 
-    margin-top: 20px;
-}
-
-header p {
-    margin: 0; 
-}
-
-header:hover #rotate {
-    animation: rotation 1s linear;
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-
-}
-
-/* !Navbar */ 
-
-nav {
-    margin: 2.5%;
+    background: white;
+    position: fixed;
+	overflow: hidden;
+    width: fit-content;
+    height: 100%;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav li a {
-    text-decoration: none;
-    color: #0066FF;
-    border-bottom: 2px solid #0066FF;
-
-}
-
-nav li a:hover {
-    transition: 0.3s;
-    border-bottom: 2px solid #8ecae6;
-}
-
-#active {
-    color: #8ecae6;
-    border-bottom: 2px solid #8ecae6; 
-}
-
-/* !Hero */
-#hero {
-    /* !AANPASSEN! */
-    background-image: url("/images/gelre-airport.jpg");
+    padding: 0; 
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    flex-direction: column;
 }
 
-#hero h1 {
-    color: #0066FF;
-    font-size: 200%;
-    text-shadow: 
-    -1px -1px 0 #002233,  
-    1px -1px 0 #002233,
-    -1px 1px 0 #002233,
-     1px 1px 0 #002233;
+.push {
+    margin-top: auto;
 }
 
-/* !AANPASSEN! */
-#hero:hover img {
-    filter: blur(8px);
+nav ul li a img {
+    padding: 15px;
+    transition: 0.75s;
+}
+
+nav ul li a img:hover {
+    transform: translateY(-10px);
 }
 
 
 
 
 
+  .button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    
+  }
+  
+  .button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .button:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+ 
