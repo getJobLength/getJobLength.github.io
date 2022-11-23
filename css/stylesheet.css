@@ -39,31 +39,6 @@ nav ul li a img:hover {
     transform: translateX(5px);
 }
 
-
-.flightbooker {
-    background: white;
-   
-    width: 100%
-   
-    padding: 7.5%;
-
-    box-shadow: 2px 2px 12px 4px #b8b8b8;
-    border-radius: 10px;
-
-    display: grid;
-    grid-template-columns: 1;
-}
-
-.flightbooker h2{
-    margin: 0;
-    padding: 0;
-}
-
-.flightbooker input[type="text"] {
-    border-radius: 10px;
-    border: 1px solid rgb(63, 63, 63);
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -71,6 +46,62 @@ nav ul li a img:hover {
     width: 100%;
     height: 100%;
 }
+
+form {
+    background-color: white;
+    padding: 2%;
+    box-shadow: 2px 2px 12px 4px #b8b8b8;
+    border-radius: 10px;
+}
+
+.flightbooker {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 20% 20% 20% 30%;
+}
+
+form h2{
+    margin: 0;
+    padding: 0;
+}
+
+.flightbooker input[type="text"] {
+    border-radius: 10px;
+    border: 1px solid rgb(63, 63, 63);
+    width: 80%;
+}
+
+#departureSVG {
+    grid-row: 1/1;
+    grid-column: 1/1;
+}
+
+#departure {
+    grid-row: 1/1;
+    grid-column: 2/3;
+}
+
+#arrivalSVG {
+    grid-row: 2/3;
+    grid-column: 1/1;
+}
+
+#arrival {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#date {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+#submit {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    
+}
+
 
 
 .button {

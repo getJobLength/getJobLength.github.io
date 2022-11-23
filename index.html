@@ -9,6 +9,7 @@
   <title>Gelre Airport</title>
 </head>
 <body>
+  
   <nav>
     <ul>
       <li><a href="#"><img src="images/User.svg" alt="User icon"></a></li>
@@ -19,26 +20,25 @@
       <li><a href="#"><img src="images/fi-rr-exit.svg" alt="Logout icon"></a></li>
     </ul>
   </nav>
-  <div class="container">  
-      
+    
+  <div class="container">
       <form action="flights.html" name="travelForm" method="get">
-        <div class="flightbooker">
-          <h2>Vind een vlucht</h2>
-        <label for="from">
+        <h2>Vind een vlucht</h2>
+        <div class="flightbooker">  
+        <label for="departure" id="departureSVG">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24.004" viewBox="0 0 24 24.004"><path d="M24,9.724V19a5.006,5.006,0,0,1-5,5H18a1,1,0,0,1,0-2h1a3,3,0,0,0,3-3V9.724a3,3,0,0,0-1.322-2.487l-7-4.723a2.979,2.979,0,0,0-3.356,0l-7,4.723A3,3,0,0,0,2,9.724V19a3,3,0,0,0,3,3H6a1,1,0,0,1,0,2H5a5.006,5.006,0,0,1-5-5V9.724A4.993,4.993,0,0,1,2.2,5.579L9.2.855a4.981,4.981,0,0,1,5.594,0l7,4.724A5,5,0,0,1,24,9.724Zm-5,5.283a6.952,6.952,0,0,1-2.05,4.949l-3.515,3.438a2.063,2.063,0,0,1-2.87,0l-3.507-3.43A7,7,0,1,1,19,15.007Zm-2,0a5,5,0,1,0-8.536,3.535l3.5,3.422,3.58-3.43A4.958,4.958,0,0,0,17,15.007ZM15,15a3,3,0,1,1-3-3A3,3,0,0,1,15,15Z" transform="translate(0 0.004)"/></svg>
         </label>
           <input type="text" name="departure" id="departure"> 
-        <label for="to">
+        <label for="arrival" id="arrivalSVG">
           <svg xmlns="http://www.w3.org/2000/svg" width="23.979" height="24" viewBox="0 0 23.979 24"><path d="M21,10H17.693L13.446,1.563A3,3,0,0,0,10.812,0H10.63A2.63,2.63,0,0,0,8.1,3.361L10.028,10H7.644a2.982,2.982,0,0,1-2.122-.879L4.105,7.7a2.409,2.409,0,0,0-2.814-.433A2.319,2.319,0,0,0,.125,8.689a2.525,2.525,0,0,0,.228,1.966L1.967,13.48A5.012,5.012,0,0,0,6.308,16h3.711L8.351,20.447A2.629,2.629,0,0,0,10.812,24a2.972,2.972,0,0,0,2.605-1.513L17.464,16H21a3,3,0,1,0,0-6Zm-10.975-7.2A.63.63,0,0,1,10.63,2h.182a.989.989,0,0,1,.863.491L15.455,10H12.11ZM21,14H16.909a1,1,0,0,0-.848.471L11.69,21.479a1,1,0,0,1-.878.521.628.628,0,0,1-.588-.85l2.174-5.8A1,1,0,0,0,11.461,14H6.308a3,3,0,0,1-2.6-1.512L2.089,9.662a.523.523,0,0,1-.047-.4A.323.323,0,0,1,2.2,9.051.437.437,0,0,1,2.4,9a.415.415,0,0,1,.287.118L4.1,10.535A4.972,4.972,0,0,0,7.644,12H21a1,1,0,1,1,0,2Z" transform="translate(-0.022)"/></svg>
         </label>
         <input type="text" name="arrival" id="arrival"> 
         <input type="date" name="dateleaving" id="date">
   
-        <button type="submit" class="button">Zoeken</button>
+        <button type="submit" class="button" id="submit">Zoeken</button>
       </div>
       </form>
     </div>
   </div>
-
 </body>
 </html>
