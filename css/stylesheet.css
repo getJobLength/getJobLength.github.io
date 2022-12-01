@@ -231,6 +231,12 @@ form h2{
     padding: 2%;
 }
 
+.userpage {
+    background-color: white;
+    box-shadow: 2px 2px 12px 4px #b8b8b8;
+    border-radius: 10px;
+    padding: 2%;
+}
 
 .button {
   background-color: #1899D6;
