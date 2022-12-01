@@ -220,7 +220,7 @@ form h2{
     padding: 2%;
 }
 
-.buttonwidth{
+.extrabuttonprops {
     width: 100%;
 }
 
@@ -243,12 +243,12 @@ form h2{
   font-weight: 700;
   letter-spacing: .8px;
   line-height: 20px;
-  margin: 0;
   padding: 13px 16px;
   text-align: center;
   text-transform: uppercase;
   transform: translateZ(0);
   transition: filter .2s;
+  margin: 5px;
 }
   
 .button:after {

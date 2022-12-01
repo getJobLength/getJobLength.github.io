@@ -23,12 +23,24 @@
     </nav>
     <main>
         <div class="container">
-            <form action="trip.html" name="travelForm" method="get">
-                <h2>Welkom!</h2>
+            <form action="succesuserdata.html" method="GET" id="flightoptions">
+                <label for="naam">Naam: </label>
+                <input type="text" name="naam" id="naam">
                 <br>
-                <button type="submit" class="button" id="submit">Mijn vluchten</button>
-        </div>
-        </form>
+                <label for="leeftijd">Leeftijd: </label>
+                <input type="number">
+                <br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="number">Geslacht: </label>
+                <select name="geslacht" id="geslacht">
+                    <option value="man">Man</option>
+                    <option value="vrouw">Vrouw</option>
+                    <option value="anders">Anders</option>
+                </select>
+                <button class="extrabuttonprops button">Aanpassen</button>
+            </form>
         </div>
     </main>
 </body>
