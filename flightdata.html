@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Gelre Airport | Vluchten</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="userchoice.html"><img src="images/User.svg" alt="User icon"></a></li>
+            <li><a href="index.html"><img src="images/fi-rr-home.svg" alt="Home icon"></a></li>
+            <li><a href="flights.html"><img src="images/fi-rr-plane-alt.svg" alt="Vluchten icon"></a></li>
+            <li><a href="privacypolicy.html"><img src="images/fi-rr-info.svg" alt="Contact icon"></a></li>
+            <li class="push"><a href="#"><img src="images/fi-rr-settings-sliders.svg" alt="Theme picker icon"></a></li>
+            <!-- <li><a href="index.html"><img src="images/fi-rr-exit.svg" alt="Logout icon"></a></li> -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <ul class="responsive-table">
+            <li class="table-header">
+                <div>Vluchtnummer</div>
+                <div>Van</div>
+                <div>Naar</div>
+                <div>Prijs</div>
+            </li>
+            <li class="table-row">
+                <div>54345</div>
+                <div>Amsterdam</div>
+                <div>Johannesburg</div>
+                <div>€115</div>
+            </li>
+            <li>
+                <form action="GET" id="flightoptions">
+                    <label for="passagiers18+">Aantal volwassenen (18+):</label>
+                    <select name="passagiers" id="passagiers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <br>
+                    <label for="passagiers18-">Aantal kinderen (18-):</label>
+                    <select name="passagiers" id="passagiers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <br>
+                    <label for="koffers">Aantal koffers</label>
+                    <select name="koffers" id="koffers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    <br>
+                    <label for="number">Gewicht (kilogram):</label>
+                    <input type="number">
+                </form>
+            </li>
+            <a href="succes.html"><button class="buttonwidth button">Aanpassen</button></a>
+        </ul>
+    </div>
+</body>
+
+</html>
