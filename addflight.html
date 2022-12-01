@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Gelre Airport | Vlucht toevoegen</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="userchoice.html"><img src="images/User.svg" alt="User icon"></a></li>
+            <li><a href="index.html"><img src="images/fi-rr-home.svg" alt="Home icon"></a></li>
+            <li><a href="flights.html"><img src="images/fi-rr-plane-alt.svg" alt="Vluchten icon"></a></li>
+            <li><a href="privacypolicy.html"><img src="images/fi-rr-info.svg" alt="Contact icon"></a></li>
+            <li class="push"><a href="#"><img src="images/fi-rr-settings-sliders.svg" alt="Theme picker icon"></a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <form action="succesuserdata.html" method="GET" id="addflight">
+                <h2>Vlucht toevoegen</h2>
+                <label for="van">Van: </label>
+                <input type="text" name="van" id="van" pattern='[a-zA-Z]+'>
+                <br>
+                <label for="naar">Naar: </label>
+                <input type="number" pattern='[a-zA-Z]+'>
+                <br>
+                <label for="capaciteit">Capaciteit (KG): </label>
+                <input type="text" name="capaciteit" id="capaciteit" pattern='[0-9]+'>
+                <br>
+                <label for="prijs">Prijs: </label>
+                <input type="number" name="prijs" id="prijs" pattern='[0-9]+'>
+                <br>
+                <label for="datum">Datum: </label>
+                <input type="date" name="datum" id="datum">
+                <button class="extrabuttonprops button">VERSTUREN</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

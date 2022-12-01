@@ -25,13 +25,13 @@
         <div class="container">
             <form action="succesuserdata.html" method="GET" id="flightoptions">
                 <label for="naam">Naam: </label>
-                <input type="text" name="naam" id="naam">
+                <input type="text" name="naam" id="naam" pattern="[a-zA-Z]">
                 <br>
                 <label for="leeftijd">Leeftijd: </label>
-                <input type="number">
+                <input type="number" pattern="[0-9]">
                 <br>
                 <label for="email">Email :</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                 <br>
                 <label for="number">Geslacht: </label>
                 <select name="geslacht" id="geslacht">

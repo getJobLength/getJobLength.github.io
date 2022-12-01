@@ -19,7 +19,6 @@
       <li><a href="flights.html"><img src="images/fi-rr-plane-alt.svg" alt="Vluchten icon"></a></li>
       <li><a href="privacypolicy.html"><img src="images/fi-rr-info.svg" alt="Contact icon"></a></li>
       <li class="push"><a href="#"><img src="images/fi-rr-settings-sliders.svg" alt="Theme picker icon"></a></li>
-      <!-- <li><a href="index.html"><img src="images/fi-rr-exit.svg" alt="Logout icon"></a></li> -->
     </ul>
   </nav>
 
@@ -34,14 +33,14 @@
               <path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z" />
             </svg>
           </label>
-          <input type="email" name="username" id="username">
+          <input type="email" name="username" id="username" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
           <label for="password" id="passwordSVG">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 35.021 35">
               <path
                 d="m15 17a1 1 0 0 1 -1 1h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 1 1zm-.293-9.707a1 1 0 0 0 -1.414 0l-1.293 1.293-1.293-1.293a1 1 0 1 0 -1.414 1.414l1.293 1.293-1.293 1.293a1 1 0 1 0 1.414 1.414l1.293-1.293 1.293 1.293a1 1 0 0 0 1.414-1.414l-1.293-1.293 1.293-1.293a1 1 0 0 0 0-1.414zm7.293 8.707h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2zm-.586-6 1.293-1.293a1 1 0 1 0 -1.414-1.414l-1.293 1.293-1.293-1.293a1 1 0 1 0 -1.414 1.414l1.293 1.293-1.293 1.293a1 1 0 1 0 1.414 1.414l1.293-1.293 1.293 1.293a1 1 0 0 0 1.414-1.414zm-15.414 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2zm.707-8.707a1 1 0 0 0 -1.414 0l-1.293 1.293-1.293-1.293a1 1 0 1 0 -1.414 1.414l1.293 1.293-1.293 1.293a1 1 0 1 0 1.414 1.414l1.293-1.293 1.293 1.293a1 1 0 1 0 1.414-1.414l-1.293-1.293 1.293-1.293a1 1 0 0 0 0-1.414z" />
             </svg>
           </label>
-          <input type="password" name="password" id="password">
+          <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
           <button type="submit" class="button" id="submit">Login</button>
         </div>
       </form>

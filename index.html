@@ -33,7 +33,7 @@
                 transform="translate(0 0.004)" />
             </svg>
           </label>
-          <input type="text" name="departure" id="departure">
+          <input type="text" name="departure" id="departure" pattern='[a-zA-Z]+'>
           <label for="arrival" id="arrivalSVG">
             <svg xmlns="http://www.w3.org/2000/svg" width="23.979" height="24" viewBox="0 0 23.979 24">
               <path
@@ -41,8 +41,8 @@
                 transform="translate(-0.022)" />
             </svg>
           </label>
-          <input type="text" name="arrival" id="arrival">
-          <input type="text" name="flightnumber" id="flightnumber" placeholder="Vluchtnummer (Niet verplicht)">
+          <input type="text" name="arrival" id="arrival" pattern='[a-zA-Z]+'>
+          <input type="text" name="flightnumber" id="flightnumber" placeholder="Vluchtnummer (Niet verplicht)" pattern="[0-9]">
           <input type="date" name="dateleaving" id="date">
 
           <button type="submit" class="button" id="submit">Zoeken</button>
